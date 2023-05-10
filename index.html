@@ -8,12 +8,13 @@
     <title>Document</title>
   </head>
   <body>
+    <a-entity light="type: ambient; color: #CCC"></a-entity>
+
+    <a-scene renderer="colorManagement: true"></a-scene>
     <a-scene background="color: #3CF"> 
-      <a-image position="-2 5 0" src="./copertina.jpg" width="3" height="4"></a-image>
-      <a-text position="0 5 0" value="Storia
-      È la vigilia del solstizio d'estate e all'Isola ci si prepara per la festa della sera. Come ogni anno, i ragazzi tra i 13 e i 18 anni si ritrovano per fare falò, intonare canzoni, cuocere salsicce alla brace sullo sfondo delle montagne. Ma anche per immaginare come cambiare il mondo e accarezzare il sogno di riuscirci davvero. Ma, quella sera, altri preparativi sono in corso. Un uomo sale in montagna con il suo furgone e la tenda, e si accampa non lontano dall'Isola. Con l'unica compagnia di una carabina." position="0 5 0"></a-text>
-      <a-entity id="rig" position="0 4 5">
-        <a-entity gltf-model="url(./foresta-storia.glb)" position="0 0 0"></a-entity>
+      <a-entity id="rig" position="0 0 0">
+        <a-entity gltf-model="url(./foresta-storia.glb)" position="0 -3 0"></a-entity>
+        <a-sky src="./forest-background.jpg"></a-sky>
         <a-camera id="camera" wasd-controls-enabled></a-camera>
       </a-entity>
     </a-scene>
